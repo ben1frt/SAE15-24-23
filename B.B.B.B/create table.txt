@@ -1,0 +1,46 @@
+
+
+
+CREATE TABLE PERSONNEL (
+  idUser INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  nom VARCHAR(70) NOT NULL,
+  prenom VARCHAR(50) NOT NULL,
+  login VARCHAR(30) NOT NULL,
+  mdp VARCHAR(30) NOT NULL,
+  admin BOOLEAN,
+  cpt_renouvellement INT NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10;
+
+INSERT INTO PERSONNEL (nom, prenom, login, mdp, admin, cpt_renouvellement) VALUES  
+('faretie','benjamin','fb','fb',TRUE,5),
+('perre','matthieu','pm','pm',FALSE,30),
+('woodman','clara','wc','wc',FALSE,50);
+
+CREATE TABLE IMAGES (
+  idImg INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  nomImg VARCHAR(70) NOT NULL,
+  nomTest VARCHAR(70) NOT NULL,
+  dateImg DATE NOT NULL,
+  heure TIME NOT NULL
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10;
+
+INSERT INTO IMAGES (nomImg, nomTest, dateImg, heure) VALUES  
+('Photo1','Test1','2022-04-27','19:08:48'),
+('Photo2','Test1','2022-05-27','20:08:48'),
+('Photo1','Test2','2022-06-27','21:08:48');
+
+CREATE TABLE LOGS (
+  idLog INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  nomLog VARCHAR(70) NOT NULL,
+  dateLog DATE NOT NULL,
+  heureLog TIME NOT NULL,
+  numUser INT,
+  numImg INT,
+  FOREIGN KEY(numUser) REFERENCES PERSONNEL(idUser),
+  FOREIGN KEY(numImg) REFERENCES IMAGES(idImg)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=10;
+
+INSERT INTO LOGS (nomLog, dateLog, heureLog) VALUES
+('Delete Photo 1','2022-07-27','20:00:00'),
+('Modification du nom de la Photo 2','2022-08-27','20:00:00'),
+('Mot de passe modifier du User 1','2022-09-27','20:00:00');
