@@ -1,0 +1,530 @@
+/* Styles par défaut
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+html {
+	font-family: sans-serif;
+	background-color: #f5f5f5;
+	background-image: url("../wall/2.jpg");
+	background-attachment: fixed;
+	height: 100%;
+}
+body {
+	height: 100vh;
+	margin:0;
+	padding:0.01%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+
+}
+header {
+	width: 100%;
+}
+a {
+	background-color: transparent;
+}
+a:active, a:hover {
+	outline: 0;
+}
+label {
+	text-align: left;
+	clear:both;
+	display: block;
+	padding:10px 10px 10px 10px;
+}
+.small {
+	font-size: 12px;
+}
+.large {
+	font-size: 20px;
+}
+/* logo de Thalès
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#Calque_2_1_{
+	height:40px;
+	width:auto;
+}
+.logoSt2{
+	fill:#2C2F73;
+}
+.logoSt4{
+	fill:#5EBFD4;
+}
+
+/* gestion des mots de passe
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.baseContainer{
+	width:100%;
+	margin:0 auto;
+	clear:both;
+	min-width:270px;
+}
+.updateContainer{
+	margin:70px auto 50px auto;
+	background-color:#ffffff;
+	max-width:600px;
+	border:1px solid #e2e2e2;
+	border-top: 1px solid #00bbdf;
+}
+#titleContainer {
+	font-style: italic;
+	font-family: 'OpenSans-Semibolditalic', sans-serif;
+	color:#949494;
+	font-size: 24px;
+	margin:12px auto 40px auto;
+	text-align: center;
+	width: 100%;
+}
+.loginChange{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.blocLogChange{
+	float: left;
+	position: absolute;
+	background-color: white;
+	margin-top: 15vh;
+	box-shadow: 1px 1px 2px #00ddff;
+	min-height: 13vw;
+	min-width: 200px;
+	margin-left: 6vw;
+	width: 16vw;
+	border-top: 1px solid #00bbdf;
+}
+#titleLogChange{
+	font-style: italic;
+	font-family: 'OpenSans-Semibolditalic', sans-serif;
+	font-size: 16px;
+	margin:20px auto 20px auto;
+	padding: 20px 15px 20px 15px;
+	color:#949494;
+	text-align: center;
+
+}
+.item{
+	font-family: 'OpenSans-Semibolditalic', sans-serif;
+	font-size: 16px;
+	line-height: 20px;
+	margin-left: 50px;
+
+}
+/* logs
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.logsContainer{
+	margin:30px 5vw 0 20vw;
+	background-color:#ffffff;
+	max-width:1350px;
+	border:1px solid #e2e2e2;
+	border-top: 1px solid #00bbdf;
+	min-height: 7500px;
+}
+
+
+/* logs tableau gauche */
+.listeUser{
+	
+	background-color: #eeeeee;
+	border-right: 1px solid #00bbdf;
+	float: left;
+	width: auto;
+	margin-right: ; 
+
+}
+#blocLogId{
+float: left;
+position: absolute;
+position: fixed;
+background-color: white;
+box-shadow: 1px 1px 2px #00ddff;
+min-height: 13vw;
+min-width: 200px;
+width: 8vw;
+border-top: 1px solid #00bbdf;
+height: 85%;
+margin-left: 10px;
+}
+
+#blocLogId ul{
+	list-style: none;
+	padding-left: 1px;
+	text-align: left;
+}
+#blocLogId li{
+	padding-left: 20px;
+
+}
+#blocLogId a{
+	color: #5b5b5b;
+}
+#blocLogId a: after{
+	color: #5b5b5b;
+}
+/* Spécifiques à la page de connection: bloc de connection
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#mainContainer {
+	width:100%;
+	margin:0 auto;
+	clear:both;
+	min-width:270px;
+}
+#authContainer {
+	margin:25px auto 50px auto;
+	background-color:#ffffff;
+	max-width:460px;
+	border:1px solid #e2e2e2;
+	border-top: 1px solid #00bbdf;
+}
+#contMore {
+	clear:both;
+	width:100%;
+	height: 55px;
+	display: inline-block;
+}
+#authMore {
+	clear:both;
+	width:100%;
+	height: 20px;
+	display: inline-block;
+}
+#thalesTitle {
+	font-style: italic;
+	font-family: 'OpenSans-Semibolditalic', sans-serif;
+	color:#949494;
+	font-size: 24px;
+	margin:12px auto 40px auto;
+	text-align: center;
+	width: 100%;
+}
+
+#formContainer {
+	width:276px;
+	margin:0 auto;
+	padding:0;
+}
+	/*messages relatifs à la connexion*/
+.errorMsg {
+width: 276px;
+background-color: #dd4b39;
+color: #ffffff;
+font-size: 11px;
+text-align: center;
+padding: 6px 0;
+margin-top: -10px;
+margin-bottom: 20px;
+border-radius: 2px;
+}
+
+.decoMsg {
+width: 276px;
+background-color: #30cd30;
+color: #ffffff;
+font-size: 11px;
+text-align: center;
+padding: 6px 0;
+margin-top: -10px;
+margin-bottom: 20px;
+border-radius: 2px;
+}
+/*bouton*/
+.btnSubmit {
+	width:276px;
+	height:44px;
+	line-height: 44px;
+	color:#ffffff;
+	background-color: #00bbdf;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 2px;
+	border:0px;
+	cursor:pointer;
+	font-family: 'Open Sans Semibold', sans-serif;
+}
+.btnSubmit:hover {
+	background-color: #00b0ff;
+}
+.btnSubmit:active {
+	background-color: #0091ea;
+}
+/*champs pour identifiants*/
+.field {
+	width:250px;
+	border:1px solid #d9d9d9;
+	border-top:1px solid #c0c0c0;
+	color:#b0b0b0;
+	font-size: 14px;
+	padding:12px 12px;
+	clear:both;
+	margin-bottom: 20px;
+	transition: all 0.3s;
+}
+.field:hover {
+	border-color:#b9b9b9;
+	border-top-color: #a0a0a0;
+}
+.field:focus {
+	color:#37474f;
+	border-color: #00bbdf;
+}
+.photo{
+	text-align: center;
+}
+
+
+/* form à choix defilant
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.photoSelector {
+	clear:both; 
+	solid #ebebeb;
+	width:100%;
+	height: 62px;
+	margin-top:70px;
+	display: inline-block;
+}
+.selector {
+	width:160px;
+	padding:0 0 0 6px;}
+
+.dropform {
+	border-left:1px solid #ebebeb;
+	height: 40px;
+	width: 100%;
+	background-color: floralwhite;
+	}
+
+option{
+	border-left:1px solid #ebebeb;
+	height: 40px;
+}
+#formAffich{
+	width: 50vw;
+	float: right;
+	margin-top: 20px;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px;
+	border-top: 1px solid #00bbdf;
+	border-bottom: 1px solid #00bbdf;border-left: 1px solid #00bbdf;border-right: 1px solid #00bbdf;
+	margin-right: 10px;
+	/*background-color: #bebebe;*/
+}
+#titleTest {
+	font-style: italic;
+	font-family: 'OpenSans-Semibolditalic', sans-serif;
+	color:#000000;
+	font-size: 30px;
+	margin:12px auto 40px auto;
+	text-align: center;
+	width: 100%;
+}
+#separ{
+	border-top: 1px solid #00bbdf;
+}
+/* bandeau de navigaion
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper {
+	height: 70px;
+	width: 100%;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+	border-bottom: 1px solid #00bbdf;
+}
+#logoBar{
+	margin-left: 70px;
+	margin-top: 15px;
+	float: left;
+}
+#thalesTitle2 {
+	font-style: italic;
+	color:#949494;
+	float: left;
+	width: 100%;
+}
+.identifiant{
+	
+	font-family: 'OpenSans-Semibold', sans-serif;
+	width: auto;
+	font-style: italic;
+	color: #606060;
+	max-width: 240px;
+	border-left: 1px solid #c5c5c5;
+	padding: 13px 20px 10px 22px;
+	line-height: 18pt;
+	font-size: 16px;
+	min-width: 200px;
+
+}
+#bandeau{
+	float: right;
+
+}
+.navi{
+	width: 53vw;
+	align-items: center;
+}
+.naviAdmin{
+	width: 70vw;
+	align-items: center;
+}
+.menu{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+.menuItem{
+	position: relative;
+	padding: 0 20px;
+	height: 100%;
+	width: auto;
+	display: flex;
+
+}
+.menuItem:before{
+	content: "";
+	position: absolute;
+	height: 33.33%;
+	width: 0;
+	background-color: #00bbdf;
+	right: 0;
+	z-index: 0;
+	top: 33.33%;
+	transition: all 0.5s;
+}
+.menuItem:after{
+	content: "";
+	position: absolute;
+	height: 33.33%;
+	width: 0;
+	background-color: #00bbdf;
+	left: 0;
+	z-index: 0;
+	bottom: 0%;
+	transition: all 0.5s;
+}
+.menuItem:hover:before,
+.menuItem:hover:after,
+.menuItem:hover .linkMenu:before{
+	width: 100%;
+
+}
+.linkMenu{
+	z-index: 5;
+	color: #5b5b5b;
+	text-decoration: none;
+	font-family: 'OpenSans-Semibold', sans-serif;
+	font-style: italic;
+	font-weight: 500;
+	font-size: 17px;
+	padding: 10px 5px;
+}
+.linkMenu:before{
+	position: absolute;
+	content: "";
+	height: 33.33%;
+	width: 0;
+	background-color: #00bbdf;
+	bottom: 66.66%;
+	left:0;
+	transition: all 0.5s;
+}
+
+#notifMajR{
+	color: red;
+	font-weight: bold;
+}
+.notifDesact{
+	display: none;
+}
+.notifActiv{
+	font-style: normal;
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	padding: 2.5px 10px;
+	border-radius: 50%;
+	background-color: red;
+	color: white;
+	z-index: 50;
+}
+
+
+/* Responsive
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media only screen and (max-width: 460px) {
+	#mainContainer, #authContainer{width:100%;border-left:0;border-right: 0px;}
+}
+@media only screen and (max-width: 400px) {
+	#mainContainer, #authContainer{width:100%;border-left:0;border-right: 0px;}
+}
+#weakMdp {
+	display:none;
+
+}
+.show{
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 14px;
+	font-weight: 600;
+	user-select: none;
+	cursor: pointer;
+	display: none;
+}
+.show.active{
+	color: #27ae60;
+}
+
+
+
+/*affichage des images page accueil
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+.big-img img{
+    width: 45%;
+    height: auto;
+    float: left;
+    margin-left: 5%;
+}
+.big-img ul{
+    float: right;
+    margin-right: 20%;
+    margin-top: 10%;
+    list-style-type: none;
+}
+.big-img ul li{
+    font-size: 1.4vw;
+}
+.miniature img{
+    width: 100%;
+    height: auto;
+}
+table{
+	width: 95%;
+    margin-top: 5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+/*form photo
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+divFormAfficdroits 777 sur video 0
+apache2/endvi
+ww-data -> utilisateur qui a créé
